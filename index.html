@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Mi primera pagina web</title>
+    <!-- Se agrgan los formularios -->
 </head>
 <body>
     <div class="target">
@@ -27,7 +29,7 @@
 
 
         
-       <table>
+       <table class="tabla">
   <tr>
     <th>Club</th>
     <th>PJ</th>
@@ -62,6 +64,20 @@
        <td>12</td>
   </tr>
 </table>
+    </div>
+    
+    <div class="Formulario">
+
+      <h3>Dejame un comentario</h3>
+
+      <form>
+        <input type="text" class="nombre" name="Userame" placeholder="Escribe tu nombre">
+        <input type="text" class="Telefono" required name="Telefono" placeholder="Numero telefonico">
+        <input type="text" class="Comentario" placeholder="Deja tu comentario">
+        <input type="submit" class="Boton" value="Enviar">
+    </form>
+
+
     </div>
 </body>
 </html>
