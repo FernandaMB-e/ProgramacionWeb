@@ -1,93 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    h1{
-      color: rgb(206, 164, 164);
-    }
 
 
-  </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mi primera pagina web</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	
+	<title>Blog personal</title>
+
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	
+   
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+
+	<link rel="stylesheet" href="css/style.css">
+
+	
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
-    
-    <div class="target">
-        <h1>Un poco sobre mi</h1>
-        <p style="color: rgb(89, 89, 90);">Me llamo Maria Fernanda, pero prefiero que me llamen solo Fernanda
-        Estoy estudiando ingenieria en computacion porque me gusta mucho
-        crear cosas y no hay limite solo tienes que imaginarlo. Llevo estudiando 
-        programacion desde la prepa, aunque realmente pensaba estudiar algo completamente
-        diferente, queria estudiar gastronomia porque tambien me gusta mucho cocinar
-        y me encantan los postres. Espero reforzar mis conocimientos sobre html y hacer paginas
-        mas bonitas y esteticas por ahora solo tengo algo de conocimientos en html y css, y tengo a mi mejor
-        amiga marcelin que estudia lo mismo que yo
-
-        </p>
-        <h3>Mis artistas favoritos son:</h3>
-
-        <li>Lana del rey</li>
-        <li>The score</li>
-        <li>Eschucho musica, la mayoria en ingles, pero no se el nombre de mas artistas
-        </li>
-        <h3>Mi familia</h3>
-
-         <img src="gordi.jpg" alt="" title="Family" class="gordis">
 
 
-        
-       <table class="tabla">
-  <tr>
-    <th>Club</th>
-    <th>PJ</th>
-    <th>G</th>
-    <th>E</th>
-    <th>P</th>
-    <th>GF</th>
-    <th>GC</th>
-    <th>DG</th>
-    <th>PTS</th>
-  </tr>
-  <tr>
-    <td>Toluca</td>
-    <td>12</td>
-    <td>9</td>
-    <td>1</td>
-    <td>2</td>
-    <td>35</td>
-    <td>16</td>
-    <td>19</td>
-    <td>28</td>
-  </tr>
-  <tr>
-    <td>America</td>
-    <td>12</td>
-     <td>8</td>
-      <td>12</td>
-       <td>12</td>
-    <td>12</td>
-     <td>12</td>
-      <td>12</td>
-       <td>12</td>
-  </tr>
-</table>
-    </div>
-    
-    <div class="Formulario">
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
 
-      <h3>Dejame un comentario</h3>
+	<div class="sk-spinner sk-spinner-pulse"></div>
 
-      <form>
-        <input type="text" class="nombre" name="Userame" placeholder="Escribe tu nombre">
-        <input type="text" class="Telefono" required name="Telefono" placeholder="Numero telefonico">
-        <input type="text" class="Comentario" placeholder="Deja tu comentario">
-        <input type="submit" class="Boton" value="Enviar">
-    </form>
+</div>
 
 
-    </div>
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Vistazo</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                        <li><a href="index.html">Principal</a></li>
+                        <li><a href="about.html">Acerca de mi</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+
+<!-- Header section
+================================================== -->
+<section id="header" class="header-one">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="header-thumb">
+              <h1 class="wow fadeIn" data-wow-delay="1.6s">María Fernanda Mendez Barrera</h1>
+              <h3 class="wow fadeInUp" data-wow-delay="1.9s">Desarrollador web</h3>
+          </div>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- Portfolio section
+================================================== -->
+<section id="portfolio">
+   <div class="container">
+      <div class="row">
+
+         <div class="col-md-12 col-sm-12">
+            
+               <!-- iso section -->
+               <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+
+                        <ul class="filter-wrapper clearfix">
+                           <li><a href="#" class="opc-main-bg" data-filter=".photoshop" >Fotos</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".graphic">Familia</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".Template">Amigos</a></li>
+                        </ul>
+
+                        <!-- iso box section -->
+                        <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
+                           <div class="iso-box-wrapper col4-iso-box">
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/1M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/2M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                        
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/9M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/7M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/8M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/3M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20231125_141050.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250322_221339.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250405_175002.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250501_144456.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250906_205400.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250915_163227.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG-20250613-WA0001.jpeg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG-20250717-WA0014.jpeg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20221206_143556_627.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20230628_201756_292.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20231018_151755_231 (1).webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20240307_104507_645.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20220821_165650_790.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20221207_094349_159.jpg" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20240920_164437_382.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+                             
+
+                            </div>
+                        </div>
+
+
+               </div>
+
+         </div>
+
+      </div>
+   </div>
+</section>
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">2025 Ing. Computacion - Designed by María Fernanda Méndez Barrera</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="https://www.facebook.com/osamu.fer" class="fa fa-facebook"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
