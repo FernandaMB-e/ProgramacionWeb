@@ -1,116 +1,347 @@
-.target{
-    background-color: rgb(245, 231, 246);
-    padding: 30px 40px 30px 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    width: 700px;
-    height: 900px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    border: 2px solid transparent;
-}
-
-body{
-    background-color: #e1dbf6;
-}
-
-.gordis{
-    margin-top: 10px;
-    margin-left: 30%;
-    width: 300px;
-    height: 200px;
-    box-sizing: content-box;
-    border-radius: 5px;
-    
-}
-
-h1{
-    padding: 5px;
-    background-color: rgb(235, 221, 246);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    border-color: black;
-    border-width: 1px;
-    border-style: dashed;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
 
-p{
-    margin-top: 80px;
-    padding: 10px;
-    text-align: justify;
-    box-sizing: border-box;
-    font-weight: lighter;
-    font-size: 15px;
-    line-height: 22px;
-}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 
-.nombre{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    border-color: transparent;
-    background-color: rgb(221, 202, 238);
-    width: 300px;
-    height: 50px;
-    text-align: center;
-}
+	
+	<title>Blog personal</title>
 
-.Telefono{
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-  margin-top: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    border-color: transparent;
-    background-color: rgb(221, 202, 238);
-    width: 300px;
-    height: 50px;
-    margin-left: 10px; 
-    text-align: center; 
-}
+	
+   
+	<link rel="stylesheet" href="css/animate.min.css">
 
-.Comentario{
-
-    margin-top: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    border-color: transparent;
-    background-color: rgb(221, 202, 238);
-    width: 300px;
-    height: 50px; 
-    margin-left: 10px;
-    text-align: center;  
-}
-
-.Boton{
-
-    border-radius: 5px;
-    text-align: center;
-    width: 80px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-.tabla{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    border: solid;
-    border-width: 1px;
-    border-color: black;
-    box-sizing: border-box;
-}
-
-h3{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
-}
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
 
+	<link rel="stylesheet" href="css/style.css">
+
+	
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Vistazo</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                        <li><a href="index.html">Principal</a></li>
+                        <li><a href="about.html">Acerca de mi</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+
+<!-- Header section
+================================================== -->
+<section id="header" class="header-one">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="header-thumb">
+              <h1 class="wow fadeIn" data-wow-delay="1.6s">María Fernanda Mendez Barrera</h1>
+              <h3 class="wow fadeInUp" data-wow-delay="1.9s">Desarrollador web</h3>
+          </div>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- Portfolio section
+================================================== -->
+<section id="portfolio">
+   <div class="container">
+      <div class="row">
+
+         <div class="col-md-12 col-sm-12">
+            
+               <!-- iso section -->
+               <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+
+                        <ul class="filter-wrapper clearfix">
+                           <li><a href="#" class="opc-main-bg" data-filter=".photoshop" >Fotos</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".graphic">Familia</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".Template">Amigos</a></li>
+                        </ul>
+
+                        <!-- iso box section -->
+                        <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
+                           <div class="iso-box-wrapper col4-iso-box">
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/1M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/2M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                        
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/9M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/7M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/8M.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/3M.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20231125_141050.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250322_221339.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250405_175002.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250501_144456.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250906_205400.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/20250915_163227.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG-20250613-WA0001.jpeg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG-20250717-WA0014.jpeg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20221206_143556_627.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20230628_201756_292.webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20231018_151755_231 (1).webp" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          
+                                       </div>
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20240307_104507_645.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20220821_165650_790.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20221207_094349_159.jpg" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+
+
+                               <div class="iso-box Template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/IMG_20240920_164437_382.webp" class="img-responsive" alt="Portfolio">
+                                 </div>
+                              </div>
+                             
+
+                            </div>
+                        </div>
+
+
+               </div>
+
+         </div>
+
+      </div>
+   </div>
+</section>
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">2025 Ing. Computacion - Designed by María Fernanda Méndez Barrera</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="https://www.facebook.com/osamu.fer" class="fa fa-facebook"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
