@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobre Mí 🎧</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<style>
+		/* Barra de filtros */
+		.filter-bar {
+			text-align: center;
+			margin: 40px 0 30px;
+		}
+		.filter-bar button {
+			border: none;
+			background: none;
+			margin: 0 10px;
+			padding: 8px 15px;
+			font-weight: 600;
+			color: #777;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: 0.3s;
+		}
+		.filter-bar button.active {
+			color: #00bcd4;
+			border-bottom: 2px solid #00bcd4;
+		}
+
+		/* Grid principal */
+		.items-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.item {
+			flex: 1 1 300px;
+			max-width: 350px;
+			display: none;
+			opacity: 0;
+			transform: translateY(40px);
+			transition: all 0.6s ease;
+		}
+		.item.active {
+			display: block;
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.card {
+			border: none;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+			background: #fff;
+			transition: transform 0.3s;
+		}
+		.card:hover {
+			transform: scale(1.03);
+		}
+		iframe {
+			border: none;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			width: 100%;
+			height: 352px;
+		}
+		.card-body {
+			padding: 15px;
+		}
+		.icons a {
+			color: #00bcd4;
+			margin: 0 8px;
+			font-size: 1.3em;
+			transition: color 0.3s;
+		}
+		.icons a:hover {
+			color: #007a8c;
+		}
+
+		/* === Footer === */
+		footer {
+			background: #111;
+			color: #ddd;
+			padding: 40px 0 20px;
+			text-align: center;
+			margin-top: 50px;
+		}
+		footer p {
+			margin: 0;
+			font-size: 0.95em;
+			color: #aaa;
+		}
+		footer .social-icon {
+			list-style: none;
+			padding: 0;
+			margin-top: 15px;
+		}
+		footer .social-icon li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		footer .social-icon a {
+			color: #00bcd4;
+			font-size: 1.4em;
+			transition: color 0.3s;
+		}
+		footer .social-icon a:hover {
+			color: #fff;
+		}
+
+
+		#biblia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* ← esto hace que todos se alineen arriba */
+  gap: 20px; /* espacio entre tarjetas */
+}
+
+
+#biblia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: start; /* los alinea arriba */
+}
+
+
+	</style>
+
+<body>
+
+
+  <div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Blog</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+						<ul id="nav-menu">
+							<li><a href="index.html">Principal</a></li>
+							<li><a href="about.html">Acerca de mi</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contacto</a></li>
+						</ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+
+	
+
+<!-- Header -->
+<section id="header" class="header-three text-center" style="padding: 60px 0;">
+	<div class="header-thumb">
+		<h1 class="wow fadeIn" data-wow-delay="0.6s">Sobre Mí</h1>
+		<h3 class="wow fadeInUp" data-wow-delay="0.9s">Conoce un poco más de mis gustos 🎶</h3>
+	</div>
+
+</section>
+
+<!-- Filtros -->
+<div class="container">
+	<div class="filter-bar">
+		<button class="active" data-filter="musica">Música</button>
+		<button data-filter="favoritos">Favoritos</button>
+		<button data-filter="biblia">Pasajes biblicos</button>
+		<button data-filter="Animes">Animes</button>
+	</div>
+
+	<!-- Contenido -->
+	<div class="items-container">
+
+		<!-- 🎧 MÚSICA -->
+		<div class="item musica active wow fadeInUp">
+			<div class="card">
+				<iframe src="https://open.spotify.com/embed/track/3oEkrIfXfSh9zGnE7eBzSV?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe src="https://open.spotify.com/embed/track/7H7NyZ3G075GqPx2evsfeb?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4lAE47gj539h8R1yxPhhGG?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5elW2CKSoqjYoJ32AGDxf1?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2vMnQBOyWKEeNUzWZK92j4?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42jTkPZ57H870vMcwGZ4XS?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3EZMEVhLjWN6vEJeWyLw09?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2NSLUXfPKTDmJMFtKZO3ma?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Lywk0gqbG3YoW4Mo3eNPW?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+ 				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2YJ8AzNQjkEnX1TH33E46g?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+				<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+				</div>
+				</div>
+			</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+ 				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5FXALCzOPuLhX07GRnrooO?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="item musica active wow fadeInUp" data-wow-delay="0.2s">
+			<div class="card">
+ 				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2txTXCdetbJcy8REtnZdRq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<div class="card-body">
+					<div class="icons">
+						<a href="https://open.spotify.com/track/7H7NyZ3G075GqPx2evsfeb" target="_blank" class="fa fa-spotify"></a>
+						<a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+					</div>
+					</div>
+				</div>
+		</div>
+
+		
+
+
+		<!-- 💫 FAVORITOS -->
+		<div class="item favoritos wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<img src="images/hk.jpeg" alt="Serie favorita" style="width:100%; height:300px; object-fit:cover;">
+				<div class="card-body">
+					<h4>Anime Favorito</h4>
+					<p>Haikyuu</p>
+					<a href="https://www.justwatch.com/mx/serie/haikyuu" class="btn btn-info btn-sm">Ver más</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item favoritos wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<img src="images/Nekoma haikyuu.jpeg" alt="Serie favorita" style="width:100%; height:300px; object-fit:cover;">
+				<div class="card-body">
+					<h4>Personje Favorito</h4>
+					<p>Kosume Kenma</p>
+					<a href="https://haikyuu.fandom.com/es/wiki/Kenma_Kozume" class="btn btn-info btn-sm">Ver más</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item favoritos wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<img src="images/descargar (3).jpeg" alt="Serie favorita" style="width:100%; height:300px; object-fit:cover;">
+				<div class="card-body">
+					<h4>Libro Favorito</h4>
+					<p>Fuego y sangre</p>
+					<a href="https://drive.google.com/file/d/1goYjv4-m7oF_Y1wBW9wUKeffXNEV8hEq/view?usp=drive_link" class="btn btn-info btn-sm">Ver más</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item favoritos wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<img src="images/descargar (4).jpeg" alt="Serie favorita" style="width:100%; height:300px; object-fit:cover;">
+				<div class="card-body">
+					<h4>Saga de libros Favorito</h4>
+					<p>Los habitantes del aire</p>
+					<a href="https://ww3.lectulandia.com/serie/los-habitantes-del-aire/" class="btn btn-info btn-sm">Ver más</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- 💫 Animes -->
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/AIwUTb4T#wJIdXSAJOdOZYJgrUgUBinzFxuawnUZyoxPE7AYBVR0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Dr.Stone</h4>
+					<p>Cap1, temp1</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/avZyzSrI#AZuPtqjVTDRDmePFhm0koYLhUdoaEF9LwzSQeZFpjiY" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Mi vecino Totoro</h4>
+					<p>Pelicula completa</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/LqZHhAbI#AAAAAAAAAADzPod3VK52RQAAAAAAAAAA8z6Hd1SudkU" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Seraph of the end</h4>
+					<p>Cap1, temp1</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/r90GiQbA#E-zDdi9eAODJbbErKDcqCd0he77FbN93CWFBv9jI1y8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Litle Wich academia</h4>
+					<p>Cap1, temp1</p>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/be4TzYJS#xJrCRarqGO53Kxr8SKXLZkSrp-F5AdE28fJ3vLQy1AE" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Bongo Stray Dogs</h4>
+					<p>Cap1, temp1</p>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="item Animes wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<iframe src="https://mega.nz/embed/M4xzgLhb#KWXrzf0kzeoZ2vMD_1CRpj9FjcphN3UtFpMos1efKOk" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+				<div class="card-body">
+					<h4>Bongo Stray Dogs</h4>
+					<p>Cap1, temp1</p>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<!--Biblia-->
+		<section id="biblia">
+<div class="item biblia wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<div class="card-body">
+					<h4>Slamos 32</h4>
+				<p>1. No te impacientes a causa de los malignos,
+				Ni tengas envidia de los que hacen iniquidad.
+				2. Porque como hierba serán pronto cortados,
+				Y como la hierba verde se secarán.
+
+				3. Confía en Jehová, y haz el bien;
+				Y habitarás en la tierra, y te apacentarás de la verdad.
+
+				4. Deléitate asimismo en Jehová,
+				Y él te concederá las peticiones de tu corazón.
+
+				5. Encomienda a Jehová tu camino,
+				Y confía en él; y él hará.
+
+				6. Exhibirá tu justicia como la luz,
+				Y tu derecho como el mediodía.
+
+				7. Guarda silencio ante Jehová, y espera en él.
+				No te alteres con motivo del que prospera en su camino,
+				Por el hombre que hace maldades.
+
+				8. Deja la ira, y desecha el enojo;
+				No te excites en manera alguna a hacer lo malo.</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item biblia wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<div class="card-body">
+					<h4>Jeremías 3:19</h4>
+				<p>”Me dije a mí mismo: ‘¡Cómo quisiera tratarlos como a mis propios hijos!’. Solo quería darles esta hermosa tierra, la posesión más maravillosa del mundo. Esperaba con anhelo que me llamaran ‘Padre’, y quise que nunca se alejaran de mí.</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item biblia wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<div class="card-body">
+					<h4>isaías 44</h4>
+				<p>Yo deshice como una nube tus rebeliones, y como niebla tus pecados; vuélvete a mí, porque yo te redimí.</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="item biblia wow fadeInUp" data-wow-delay="0.3s">
+			<div class="card">
+				<div class="card-body">
+					<h4>isaías 43</h4>
+				<p>1. Ahora, así dice Jehová, Creador tuyo, oh Jacob, y Formador tuyo, oh Israel: No temas, porque yo te redimí; te puse nombre, mío eres tú.
+2. Cuando pases por las aguas, yo estaré contigo; y si por los ríos, no te anegarán. Cuando pases por el fuego, no te quemarás, ni la llama arderá en ti.</p>
+				</div>
+				
+			</div>
+		</div>
+		
+</section>
+
+	</div>
+</div>
+
+
+
+
+
+
+<!-- 🌌 FOOTER -->
+<footer class="wow fadeInUp" data-wow-delay="0.3s">
+	<p>© 2025 Maria Fernanda Mendez Barrera</p>
+	<ul class="social-icon">
+		<li><a href="https://www.facebook.com/osamu.fer" class="fa fa-facebook"></a></li>
+		<li><a href="https://www.instagram.com/hinatashoyo1276/" class="fa fa-instagram"></a></li>
+		<li><a href="https://www.youtube.com/@Mariafernandamendezbarrera" class="fa fa-youtube"></a></li>
+	</ul>
+</footer>
+
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+	new WOW().init();
+
+	const buttons = document.querySelectorAll('.filter-bar button');
+	const items = document.querySelectorAll('.item');
+
+	buttons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			buttons.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			const filter = btn.getAttribute('data-filter');
+
+			items.forEach(item => {
+				item.classList.remove('wow', 'fadeInUp', 'fadeInDown');
+				if (item.classList.contains(filter)) {
+					item.style.display = 'block';
+					item.classList.add('active', 'wow', Math.random() > 0.5 ? 'fadeInUp' : 'fadeInDown');
+				} else {
+					item.style.display = 'none';
+					item.classList.remove('active');
+				}
+			});
+			new WOW().init();
+		});
+	});
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
